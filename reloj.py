@@ -1,6 +1,10 @@
 import datetime
 
 
+def ver_hora_sf():
+	###Ver hora en Sn. Fco.###
+
+	
 def menu():
     print('1 - Ver la hora')
     print('2 - Ver fecha y hora')
