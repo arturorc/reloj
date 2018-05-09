@@ -17,8 +17,12 @@ def menu():
     print('2 - Ver fecha y hora')
     print('3 - Ver hora en NY')
     print('4 - Ver hora en SF')
-    print('5 - Ver instrucciones')
-    print('6 - salir')
+
+    print('6 - Ver hora en Brasil')
+
+
+    print('9 - Ver instrucciones')
+    print('0 - salir')
 
 # TODO agregar opciones para obtener la fecha y hora en:
 # España
@@ -44,9 +48,11 @@ def reloj():
                 print('La hora exacta en NY es: %s' % ver_hora(-5))
             elif op == 4:
                 print('La hora exacta SF es: %s' % ver_hora(-8))
-            elif op == 5:
-                menu()
             elif op == 6:
+                print('La hora exacta en Brasil es: %s' % ver_hora(-3))
+            elif op == 9:
+                menu()
+            elif op == 0:
                 break
 
 reloj()
