@@ -1,5 +1,12 @@
 import datetime
 
+
+def ver_hora_ny():
+    """ Fecha y hora de NY"""
+    print("fecha y hora en N.Y. EU:\n")
+    print("2018/05/09 12:20:00")
+
+
 def ver_fecha_hora():
     """:return Cadena de hora y fecha local (-6)"""
     formato  = "%B %d, %Y  %H:%M:%S"
@@ -8,8 +15,9 @@ def ver_fecha_hora():
     fecha_formateada = fecha_actual.strftime(formato)
     print("La fecha y la hora exacta son: {}".format(fecha_formateada))
 
+
 def ver_hora_sf():
-	###Ver hora en Sn. Fco.###
+    ###Ver hora en Sn. Fco.###
 
 	
 def ver_hora(time_zone):
@@ -73,5 +81,15 @@ def reloj():
                 menu()
             elif op == 7:
                 break
+
+
+def ver_hora_japon():
+    """japon"""
+    formato  = "%H:%M:%S"
+    zona_horaria = datetime.timezone(datetime.timedelta(hours=9))
+    hora_actual =  datetime.datetime.now(zona_horaria).time()
+    hora_formateada = hora_actual.strftime(formato)
+    print("La hora exacta en Japon es: {}".format(hora_formateada)
+
 
 reloj()
