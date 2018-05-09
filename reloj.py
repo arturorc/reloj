@@ -1,7 +1,7 @@
 import datetime
 
 
-def verFechaHoraEspana():
+def ver_fecha_hora_espana():
     """
     :param Nada
     :return Cadena con fecha y hora
@@ -46,7 +46,7 @@ def reloj():
             elif op == 4:
                 print('La hora exacta SF es: %s' % ver_hora(-8))
             elif op == 5:
-                verFechaHoraEspana()
+                ver_fecha_hora_espana()
             elif op == 6:
                 menu()
             elif op == 7:
