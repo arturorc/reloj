@@ -1,5 +1,12 @@
 import datetime
 
+
+def ver_hora_ny():
+    """ Fecha y hora de NY"""
+    print("fecha y hora en N.Y. EU:\n")
+    print("2018/05/09 12:20:00")
+
+
 def ver_fecha_hora():
     """:return Cadena de hora y fecha local (-6)"""
     formato  = "%B %d, %Y  %H:%M:%S"
@@ -7,6 +14,7 @@ def ver_fecha_hora():
     fecha_actual =  datetime.datetime.now(zona_horaria)
     fecha_formateada = fecha_actual.strftime(formato)
     print("La fecha y la hora exacta son: {}".format(fecha_formateada))
+
 
 def ver_hora_sf():
 	###Ver hora en Sn. Fco.###
@@ -75,3 +83,5 @@ def reloj():
                 break
 
 reloj()
+
+-
