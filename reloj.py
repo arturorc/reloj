@@ -5,6 +5,17 @@ def ver_hora_sf():
 	###Ver hora en Sn. Fco.###
 
 	
+def ver_hora(time_zone):
+    """
+    :param time_zone:
+    :return cadena de hora con el formato %H:%M:%S:
+    """
+    formato = '%H:%M:%S'
+    time_zone = datetime.timezone(datetime.timedelta(hours=time_zone))
+    hora_actual = datetime.datetime.now(time_zone).time()
+    return hora_actual.strftime(formato)
+
+
 def menu():
     print('1 - Ver la hora')
     print('2 - Ver fecha y hora')
