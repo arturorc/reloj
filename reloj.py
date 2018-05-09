@@ -1,6 +1,10 @@
 import datetime
 
 
+def ver_hora_sf():
+	###Ver hora en Sn. Fco.###
+
+	
 def ver_hora(time_zone):
     """
     :param time_zone:
