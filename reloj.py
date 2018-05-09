@@ -1,5 +1,11 @@
 import datetime
 
+def ver_fecha_hora():
+    formato  = "%B %d, %Y  %H:%M:%S"
+    zona_horaria = datetime.timezone(datetime.timedelta(hours=-6))
+    fecha_actual =  datetime.datetime.now(zona_horaria)
+    fecha_formateada = fecha_actual.strftime(formato)
+    print("La fecha y la hora exacta son: {}".format(fecha_formateada))
 
 def menu():
     print('1 - Ver la hora')
