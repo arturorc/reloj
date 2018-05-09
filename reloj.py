@@ -41,6 +41,7 @@ def reloj():
 
 
 def ver_hora_japon():
+    """japon"""
     formato  = "%H:%M:%S"
     zona_horaria = datetime.timezone(datetime.timedelta(hours=9))
     hora_actual =  datetime.datetime.now(zona_horaria).time()
