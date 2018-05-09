@@ -1,7 +1,6 @@
 import datetime
 
 
-
 def menu():
     print('1 - Ver la hora')
     print('2 - Ver fecha y hora')
@@ -49,10 +48,3 @@ def ver_hora_japon():
     print("La hora exacta en Japon es: {}".format(hora_formateada)
 
 reloj()
-
-
-
-
-
-
-
