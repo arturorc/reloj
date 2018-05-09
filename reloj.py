@@ -1,6 +1,7 @@
 import datetime
 
 
+
 def menu():
     print('1 - Ver la hora')
     print('2 - Ver fecha y hora')
@@ -38,5 +39,19 @@ def reloj():
             elif op == 6:
                 break
 
+
+def ver_hora_japon():
+    formato  = "%H:%M:%S"
+    zona_horaria = datetime.timezone(datetime.timedelta(hours=9))
+    hora_actual =  datetime.datetime.now(zona_horaria).time()
+    hora_formateada = hora_actual.strftime(formato)
+    print("La hora exacta en Japon es: {}".format(hora_formateada)
+
 reloj()
+
+
+
+
+
+
 
