@@ -1,5 +1,9 @@
 import datetime
 
+def ver_hora_ny():
+    print("fecha y hora en N.Y. EU:\n")
+    print("2018/05/09 12:20:00")
+
 
 def menu():
     print('1 - Ver la hora')
