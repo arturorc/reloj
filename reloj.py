@@ -82,6 +82,15 @@ def reloj():
             elif op == 7:
                 break
 
+
+def ver_hora_japon():
+    """japon"""
+    formato  = "%H:%M:%S"
+    zona_horaria = datetime.timezone(datetime.timedelta(hours=9))
+    hora_actual =  datetime.datetime.now(zona_horaria).time()
+    hora_formateada = hora_actual.strftime(formato)
+    print("La hora exacta en Japon es: {}".format(hora_formateada)
+
 reloj()
 
 -
