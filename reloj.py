@@ -17,7 +17,7 @@ def ver_fecha_hora():
 
 
 def ver_hora_sf():
-	###Ver hora en Sn. Fco.###
+    ###Ver hora en Sn. Fco.###
 
 	
 def ver_hora(time_zone):
@@ -91,6 +91,5 @@ def ver_hora_japon():
     hora_formateada = hora_actual.strftime(formato)
     print("La hora exacta en Japon es: {}".format(hora_formateada)
 
-reloj()
 
--
+reloj()
