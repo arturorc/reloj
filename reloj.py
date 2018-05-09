@@ -2,6 +2,10 @@ import datetime
 
 
 def ver_hora(time_zone):
+    """
+    :param time_zone:
+    :return cadena de hora con el formato %H:%M:%S:
+    """
     formato = '%H:%M:%S'
     time_zone = datetime.timezone(datetime.timedelta(hours=time_zone))
     hora_actual = datetime.datetime.now(time_zone).time()
