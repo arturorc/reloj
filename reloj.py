@@ -50,6 +50,7 @@ def menu():
     print('5 - Ver hora en España')
     print('6 - Ver instrucciones')
     print('7 - salir')
+    print('8 - Ver hora en Japón')
 
 # TODO agregar opciones para obtener la fecha y hora en:
 # España
@@ -81,15 +82,23 @@ def reloj():
                 menu()
             elif op == 7:
                 break
+            elif op == 8:
+                ver_fecha_hora_brasil()
 
 
 def ver_hora_japon():
     """japon"""
     formato  = "%H:%M:%S"
-    zona_horaria = datetime.timezone(datetime.timedelta(hours=9))
+    zona_horaria = datetime.timezone(datetime.timedelta(hours=-4))
     hora_actual =  datetime.datetime.now(zona_horaria).time()
     hora_formateada = hora_actual.strftime(formato)
     print("La hora exacta en Japon es: {}".format(hora_formateada)
+
+def ver_fecha_hora_brasil():
+    formato = "%B %d, %Y  %H:%M"
+    zonaHoraria = datetime.timezone(datetime.timedelta(hours=2))
+    fechaActual = datetime.datetime.now(zonaHoraria).strftime(formato)
+    print("La fecha en Brasil es: {} ".format(fechaActual))
 
 
 reloj()
